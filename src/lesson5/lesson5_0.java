@@ -2,6 +2,9 @@ package lesson5;
 
 public class lesson5_0 {
     public static void main(String[] args) {
+
+        //Создать массив из 5 сотрудников
+
         Sotrydnik sotrydnik1 = new Sotrydnik("Ivan.Y.R.", "slesar4r", "ivan@mai.ru",
                 "+79999112233", 40000, 41);
         Sotrydnik sotrydnik2 = new Sotrydnik("Dima.D.M.", "slesar3r", "dima@mai.ru",
@@ -19,12 +22,13 @@ public class lesson5_0 {
 
         };
 
+        //С помощью цикла вывести информацию только о сотрудниках старше 40 лет
+
         for (int i = 0; i < sotrydnik.length; i++) {
             if (sotrydnik[i].getVozrost() > 40) {
-                sotrydnik[i].Info();
+                sotrydnik[i].Info1();
             }
         }
-
     }
 }
 
